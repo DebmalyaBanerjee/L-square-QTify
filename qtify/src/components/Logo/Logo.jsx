@@ -1,18 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import logo from "../../assets/logo.svg";
-import styles from "../Navbar/Navbar.module.css";
+import React from 'react';
+import logoImage from '../../assets/logo.png';
+import styles from './Logo.module.css';
+
 const Logo = () => {
-  let navigate = useNavigate();
-  return (
-    <div>
-      <img
-        src={logo}
-        alt="Logo"
-        className={styles.img}
-        onClick={() => navigate("/")}
-      />
-    </div>
-  );
+  return <img src={logoImage} alt="QTify Logo" className={styles.logo} />;
 };
 
 export default Logo;

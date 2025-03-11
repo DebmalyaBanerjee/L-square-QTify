@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from '../src/components/Navbar/Navbar.jsx';
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import HeroSection from './components/HeroSection/HeroSection';
+// import SongsSection from './components/SongsSection/SongsSection';
+// import NewAlbumsSection from './components/NewAlbumsSection/NewAlbumsSection';
+// import FAQ from './components/Faq/FAQ';
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    <div className="App" style={{ backgroundColor: 'black', minHeight: '100vh', color: 'white' }}>
       <Navbar />
+      <HeroSection />
+      {/* <NewAlbumsSection />
+      <SongsSection />
+      <FAQ/> */}
     </div>
   );
 }
